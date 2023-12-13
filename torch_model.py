@@ -39,7 +39,7 @@ class TextCNN(nn.Module):
                                         out_channels=256,
                                         kernel_size=5),
                               nn.ReLU(),
-                              nn.MaxPool1d(kernel_size=596))
+                              nn.MaxPool1d(kernel_size=32 - 4))
 
         self.f1 = nn.Linear(256, 10)
 
